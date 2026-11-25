@@ -19,15 +19,25 @@
         "kulit": "sawo",
         "baju": "hijau",
         "kacamata": false
+      },
+      {
+        "nama": "Bella",
+        "gender": "wanita",
+        "usia": "dewasa",
+        "rambut": "panjang",
+        "kulit": "sawo",
+        "baju": "kuning",
+        "kacamata": false
       }
     ],
     "ringkasan": [
-      "Part 1: Tia menerima paket anonim berisi boneka kain yang sangat identik dengan dirinya. Setiap malam posisi boneka berpindah tempat sendiri. Tia memutuskan memasang kamera CCTV di kamarnya untuk mengungkap kejadian tersebut."
+      "Part 1: Tia menerima paket anonim berisi boneka kain yang sangat identik dengan dirinya. Setiap malam posisi boneka berpindah tempat sendiri. Tia memutuskan memasang kamera CCTV di kamarnya untuk mengungkap kejadian tersebut.",
+      "Part 2: Tia mendapati tidak ada catatan pengiriman paket boneka itu. Bella menceritakan bahwa penghuni kamar lama pernah mengalami hal yang sama lalu menghilang. Tia membakar boneka itu di bak sampah, namun keesokan harinya boneka tersebut kembali di atas bantalnya dan mengenakan pakaian bekas Tia."
     ],
-    "cliffhanger": "Rekaman jam tiga pagi memperlihatkan boneka itu duduk menatap Tia tidur, padahal di saat bersamaan Tia sedang memeluk boneka serupa.",
+    "cliffhanger": "Boneka itu kembali secara misterius dan mengenakan baju yang dipakai Tia kemarin.",
     "pilihan": [
-      "Periksa isi boneka itu",
-      "Tanya ke ibu kos"
+      "Hancurkan boneka dengan ritu",
+      "Cari keberadaan penghuni lam"
     ]
   }
 }
