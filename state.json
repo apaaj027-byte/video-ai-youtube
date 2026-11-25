@@ -1,1 +1,33 @@
-{}
+{
+  "Boneka Pesanan Online": {
+    "narator": "Tia",
+    "tokoh": [
+      {
+        "nama": "Tia",
+        "gender": "wanita",
+        "usia": "dewasa",
+        "rambut": "kuncir",
+        "kulit": "sawo",
+        "baju": "abu",
+        "kacamata": false
+      },
+      {
+        "nama": "Ibu Kos",
+        "gender": "wanita",
+        "usia": "tua",
+        "rambut": "hijab",
+        "kulit": "sawo",
+        "baju": "hijau",
+        "kacamata": false
+      }
+    ],
+    "ringkasan": [
+      "Part 1: Tia menerima paket anonim berisi boneka kain yang sangat identik dengan dirinya. Setiap malam posisi boneka berpindah tempat sendiri. Tia memutuskan memasang kamera CCTV di kamarnya untuk mengungkap kejadian tersebut."
+    ],
+    "cliffhanger": "Rekaman jam tiga pagi memperlihatkan boneka itu duduk menatap Tia tidur, padahal di saat bersamaan Tia sedang memeluk boneka serupa.",
+    "pilihan": [
+      "Periksa isi boneka itu",
+      "Tanya ke ibu kos"
+    ]
+  }
+}
