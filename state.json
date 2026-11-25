@@ -33,10 +33,14 @@
     "ringkasan": [
       "Part 1: Tia menerima paket anonim berisi boneka kain yang sangat identik dengan dirinya. Setiap malam posisi boneka berpindah tempat sendiri. Tia memutuskan memasang kamera CCTV di kamarnya untuk mengungkap kejadian tersebut.",
       "Part 2: Tia mendapati tidak ada catatan pengiriman paket boneka itu. Bella menceritakan bahwa penghuni kamar lama pernah mengalami hal yang sama lalu menghilang. Tia membakar boneka itu di bak sampah, namun keesokan harinya boneka tersebut kembali di atas bantalnya dan mengenakan pakaian bekas Tia.",
-      "Part 3: Tia menemukan buku harian lama yang memberi petunjuk cara menghentikan terror boneka. Saat merobek bagian dada boneka di jam tiga pagi, Tia menemukan nama anak kecil yang hilang dulu. Boneka itu ternyata bukan mencari pemiliknya, melainkan mencari raga pengganti, dan kini nama Tia yang terukir di boneka tersebut."
+      "Part 3: Tia menemukan buku harian lama yang memberi petunjuk cara menghentikan terror boneka. Saat merobek bagian dada boneka di jam tiga pagi, Tia menemukan nama anak kecil yang hilang dulu. Boneka itu ternyata bukan mencari pemiliknya, melainkan mencari raga pengganti, dan kini nama Tia yang terukir di boneka tersebut.",
+      "Part 1: Tia menerima paket anonim berisi boneka kain yang sangat identik dengan dirinya. Setiap malam posisi boneka berpindah tempat sendiri. Tia memutuskan memasang kamera CCTV di kamarnya untuk mengungkap kejadian tersebut."
     ],
-    "cliffhanger": "Nama Tia kini terukir di punggung boneka kain itu.",
-    "pilihan": []
+    "cliffhanger": "Rekaman CCTV jam 03.00 memperlihatkan boneka itu duduk di atas kasur menghadap Tia yang sedang tertidur.",
+    "pilihan": [
+      "Periksa CCTV lebih teliti",
+      "Tanya tetangga kamar kos"
+    ]
   },
   "Voice Note dari Nomor Sendiri": {
     "narator": "Dinda",
