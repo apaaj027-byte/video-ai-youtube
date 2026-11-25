@@ -37,5 +37,36 @@
     ],
     "cliffhanger": "Nama Tia kini terukir di punggung boneka kain itu.",
     "pilihan": []
+  },
+  "Voice Note dari Nomor Sendiri": {
+    "narator": "Dinda",
+    "tokoh": [
+      {
+        "nama": "Dinda",
+        "gender": "wanita",
+        "usia": "dewasa",
+        "rambut": "hijab",
+        "kulit": "sawo",
+        "baju": "abu",
+        "kacamata": false
+      },
+      {
+        "nama": "Maya",
+        "gender": "wanita",
+        "usia": "dewasa",
+        "rambut": "kuncir",
+        "kulit": "terang",
+        "baju": "kuning",
+        "kacamata": false
+      }
+    ],
+    "ringkasan": [
+      "Part 1: Dinda terbangun jam 03.07 karena menerima voice note dari nomornya sendiri yang melarang membuka pintu. Seseorang yang mengaku Maya mengetuk pintu minta tolong, namun voice note kedua memperingatkan bahwa Maya sudah pindah sejak bulan lalu. Ketukan terhenti dan suara Maya mendadak terdengar dari dalam kamar Dinda."
+    ],
+    "cliffhanger": "Suara Maya terdengar tepat di dalam kamar padahal pintu masih terkunci rapat dari dalam.",
+    "pilihan": [
+      "Sembunyi di bawah kasur",
+      "Lari keluar lewat jendela"
+    ]
   }
 }
