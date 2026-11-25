@@ -1,0 +1,70 @@
+name: Video cerita bersambung
+
+on:
+  schedule:
+    - cron: "0 12 * * *"      # tiap hari 19:00 WIB; ubah sesuai selera
+  workflow_dispatch:
+    inputs:
+      menang:
+        description: "Hasil voting komentar untuk part ini (kosongkan jika tidak ada voting)"
+        type: choice
+        default: ""
+        options: ["", "1", "2"]
+
+permissions:
+  contents: write              # supaya topics.csv & state.json bisa di-commit balik
+
+concurrency:
+  group: video-bersambung      # jangan ada dua proses sekaligus (agar part tidak ganda)
+  cancel-in-progress: false
+
+jobs:
+  buat-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pasang FFmpeg dan font
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+          mkdir -p fonts
+          # Poppins Bold = font subtitle seperti video contoh; kalau gagal diunduh, otomatis pakai DejaVu
+          curl -fsSL "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf" -o fonts/Poppins-Bold.ttf || rm -f fonts/Poppins-Bold.ttf
+      - run: pip install -r requirements.txt
+      - name: Buat dan unggah video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          UPLOAD: "0"                  # ganti "1" setelah tiga secret YouTube diisi
+          SIMPAN_KEMAJUAN: "1"         # seri tetap maju ke part berikutnya
+          YT_PRIVACY: private
+          KANAL: BISIK        # nama akunmu di pojok kiri atas video; kosongkan ("") untuk tanpa tulisan
+          FONT_PATH: fonts/Poppins-Bold.ttf
+          MENANG: ${{ inputs.menang }} # diisi saat Run workflow manual (hasil voting)
+        run: python main.py
+      - name: Simpan video sebagai file unduhan
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: |
+            work/final.mp4
+            work/info.json
+          retention-days: 14
+      - name: Simpan kemajuan seri
+        run: |
+          git config user.name "video-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add topics.csv state.json
+          if git diff --staged --quiet; then
+            echo "Tidak ada perubahan untuk disimpan"
+          else
+            git commit -m "Seri maju satu part"
+            git pull --rebase
+            git push
+          fi
