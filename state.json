@@ -66,12 +66,13 @@
       }
     ],
     "ringkasan": [
-      "Part 1: Dinda terbangun jam 03.07 karena menerima voice note dari nomornya sendiri yang melarang membuka pintu. Seseorang yang mengaku Maya mengetuk pintu minta tolong, namun voice note kedua memperingatkan bahwa Maya sudah pindah sejak bulan lalu. Ketukan terhenti dan suara Maya mendadak terdengar dari dalam kamar Dinda."
+      "Part 1: Dinda terbangun jam 03.07 karena menerima voice note dari nomornya sendiri yang melarang membuka pintu. Seseorang yang mengaku Maya mengetuk pintu minta tolong, namun voice note kedua memperingatkan bahwa Maya sudah pindah sejak bulan lalu. Ketukan terhenti dan suara Maya mendadak terdengar dari dalam kamar Dinda.",
+      "Part 1: Dinda terbangun jam 03.07 karena menerima pesan suara dari nomor ponselnya sendiri yang melarang membuka pintu kamar. Sosok mirip temannya, Maya, mengetuk pintu minta tolong, namun pesan suara kedua mengingatkan bahwa Maya sudah pindah bulan lalu. Ketukan terhenti dan bisikan Maya justru terdengar tepat di dalam kamar Dinda."
     ],
-    "cliffhanger": "Suara Maya terdengar tepat di dalam kamar padahal pintu masih terkunci rapat dari dalam.",
+    "cliffhanger": "Suara Maya berbisik langsung di telinga Dinda padahal pintu kamar masih terkunci rapat dari dalam.",
     "pilihan": [
-      "Sembunyi di bawah kasur",
-      "Lari keluar lewat jendela"
+      "Menoleh ke belakang kasur",
+      "Langsung lari keluar kamar"
     ]
   }
 }
